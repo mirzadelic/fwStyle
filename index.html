@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fwstyle by mirzadelic</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Fwstyle</h1>
+        <p>Style the first word in tag (fwStyle jQuery plugin)</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/mirzadelic/fwStyle" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/mirzadelic/fwStyle/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/mirzadelic/fwStyle/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>fwStyle jQuery plugin</h1>
+
+<p>Style the first word in tag.</p>
+
+<p>Supported options:</p>
+
+<ul>
+<li>class</li>
+<li>color</li>
+<li>bold</li>
+<li>underline</li>
+<li>italic</li>
+<li>font size</li>
+<li>affect on one word or not</li>
+</ul><p>Usage:</p>
+
+<div class="highlight"><pre>    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+
+       <span class="nx">$</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">).</span><span class="nx">fwStyle</span><span class="p">({</span>
+            <span class="nx">addColor</span><span class="o">:</span> <span class="s2">"#2751BA"</span>
+       <span class="p">});</span>
+    <span class="p">});</span>
+</pre></div>
+
+<p>Options:</p>
+
+<div class="highlight"><pre>    <span class="nx">$</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">).</span><span class="nx">fwStyle</span><span class="p">({</span>
+        <span class="s1">'addClass'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// append class to first word (class name/false)</span>
+        <span class="s1">'addColor'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// add color to first word (hex or name of color/false)</span>
+        <span class="s1">'makeBold'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// bold first word (true/false)</span>
+        <span class="s1">'makeUnderline'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// underline first word (true/false)</span>
+        <span class="s1">'makeItalic'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// italic first word (true/false)</span>
+        <span class="s1">'fontSize'</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// add font size to first word (true/false)</span>
+        <span class="s1">'oneWord'</span> <span class="o">:</span> <span class="kc">true</span> <span class="c1">// should other options affect on tag that contain one word (true/false)</span>
+    <span class="p">});</span>
+</pre></div>
+
+<p>Contact for bugs: <a href="mailto:mirzadelic1@gmail.com">mirzadelic1@gmail.com</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/mirzadelic">mirzadelic</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
