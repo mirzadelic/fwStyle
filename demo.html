@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo: fwStyle jQuery</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js.js" ></script>
+	<style type="text/css">
+
+		body {
+			font-family: "Arial";
+			background: #FFF
+		}
+		.container {
+			background: #F3F3F3;
+			width: 760px;
+			margin: 10px auto;
+			padding: 30px
+		}
+		h1 {
+			margin-top: 20px;
+			border-bottom: 2px solid #848484
+		}
+		.no {
+			color: #555;
+			border: none;
+			margin-bottom: 50px
+		}
+		h2 {
+			font-weight: normal;
+			margin: 40px 0 10px 0;
+		}
+		pre {
+			border: 2px solid #CCC;
+			background:#E6E6E6;
+			padding: 20px
+		}
+		.h2_class {
+			color: #811717
+		}
+
+	</style>
+	<script>
+
+		$(document).ready(function(){
+
+	       $('h1').fwStyle({
+	       		addColor: "#2751BA",
+	       		oneWord: false
+	       });
+	       $('h2').fwStyle({
+	       		addClass: "h2_class",
+	       		makeBold : true,
+	       		makeItalic: true,
+	       		oneWord: false
+	       });
+
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="no">Demo: Style the first word in tag (fwStyle jQuery plugin)</h2>
+		<h1>New article (h1 tag)</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut numquam provident magni non ducimus modi alias illum repellendus laborum adipisci nobis quae dignissimos nam qui fugit in quam inventore!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aliquam quas voluptas cum quam. Quam animi veniam suscipit commodi error sapiente nisi molestias optio odit quis accusamus possimus dolor ad!
+		</p>
+		<h2>Read this (h2 tag)</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nostrum maxime pariatur voluptas eum sed totam libero tenetur! Commodi possimus ea ipsum cumque libero consequuntur quasi illum corporis atque labore.
+		</p>
+
+		<h2>Usage:</h2>
+		<pre>
+$(document).ready(function(){
+
+   $('h1').fwStyle({
+   		addColor: "#2751BA",
+   		oneWord: false
+   });
+   $('h2').fwStyle({
+   		addClass: "h2_class",
+   		makeBold : true,
+   		makeItalic: true
+   });
+
+});
+		</pre>
+		<h2>Options:</h2>
+		<p>These are default values:</p>
+		<pre>
+$('h1').fwStyle({
+    'addClass' : false, // append class to first word (class name/false)
+    'addColor' : false, // add color to first word (hex or name of color/false)
+    'makeBold' : false, // bold first word (true/false)
+    'makeUnderline' : false, // underline first word (true/false)
+    'makeItalic' : false, // italic first word (true/false)
+    'fontSize' : false, // add font size to first word (true/false)
+    'oneWord' : true // should other options affect on tag that contain one word (true/false)
+});
+		</pre>
+	</div>
+
+</body>
+</html>
