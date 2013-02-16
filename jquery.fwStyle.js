@@ -1,5 +1,5 @@
 /*
- *  First word style changer - jQuery plugin
+ *  First word style changer - fwStyle jQuery plugin
  *  Change the first word style of selected tag.
  *  Available options: class, color, bold, underline, italic, font size, options affect on one word
  *
