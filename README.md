@@ -1,7 +1,8 @@
 fwStyle jQuery plugin
 =======
 
-Style the first word in tag (fwStyle jQuery plugin).
+Style the first word in tag.
+
 Supported options:
 
  - class
